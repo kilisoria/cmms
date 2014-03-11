@@ -15,46 +15,53 @@
 	?>
 	<body>
 
-<div class="services-main-container">  
-		<div class="container services-top-container">
-			<? Resources::ServicesMainDescription(); ?>
-		</div>
-		<div class="container services-sub-top-container">	
-			<? Resources::ServicesSubDescription(); ?>
-		</div>
-		<div class="jcarousel-wrapper">
-			<div class="jcarousel">
-				<ul>
-					<li><img src="Content/Images/microsoft.jpg" width="100" height="110" alt="">
-					</li>
-					<li><img src="Content/Images/VS-logo.jpg" width="100" height="110" alt="">
-					</li>
-					<li><img src="Content/Images/Csharp.jpg" width="100" height="110" alt="">
-					</li>
-					<li><img src="Content/Images/ASP-net-MVC.jpg" width="100" height="110" alt="">
-					</li>
-					<li><img src="Content/Images/SQL-server.jpg" width="100" height="110" alt="">
-					</li>
-					<li><img src="Content/Images/Azure.jpg" width="120" height="110" alt="">
-					</li>
-					<li><img src="Content/Images/HTML5.jpg" width="200" height="160" alt="">
-					</li>
-					<li><img src="Content/Images/css3.jpg" width="200" height="160" alt="">
-					</li>
-					<li><img src="Content/Images/javascript.jpg" width="180" height="160" alt="">
-					</li>
-					<li><img src="Content/Images/linux.jpg" width="200" height="160" alt="">
-					</li>
-					<li><img src="Content/Images/php.jpg" width="200" height="160" alt="">
-					</li>
-					<li><img src="Content/Images/Apache.jpg" width="200" height="160" alt="">
-					</li>
-				</ul>
+		<div class="container-fluid services-main-container">
+
+			<div class="row">
+
+				<div class="col-md-6 col-md-offset-3 services-content-1">
+					<? Resources::ServicesMainDescription(); ?>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-md-8 col-md-offset-3 services-content-2">
+					<div>Architecture</div>&nbsp;<div>Software Development</div>&nbsp;<div>Consultancy</div>					
+				</div>
 			</div>
-			<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-			<a href="#" class="jcarousel-control-next">&rsaquo;</a>
-			<p class="jcarousel-pagination"></p>
-		</div>
+
+			<div class="jcarousel-wrapper">
+				<div class="jcarousel">
+					<ul>
+						<li><img src="Content/Images/microsoft.jpg" width="100" height="110" alt="">
+						</li>
+						<li><img src="Content/Images/VS-logo.jpg" width="100" height="110" alt="">
+						</li>
+						<li><img src="Content/Images/Csharp.jpg" width="100" height="110" alt="">
+						</li>
+						<li><img src="Content/Images/ASP-net-MVC.jpg" width="100" height="110" alt="">
+						</li>
+						<li><img src="Content/Images/SQL-server.jpg" width="100" height="110" alt="">
+						</li>
+						<li><img src="Content/Images/Azure.jpg" width="120" height="110" alt="">
+						</li>
+						<li><img src="Content/Images/HTML5.jpg" width="200" height="160" alt="">
+						</li>
+						<li><img src="Content/Images/css3.jpg" width="200" height="160" alt="">
+						</li>
+						<li><img src="Content/Images/javascript.jpg" width="180" height="160" alt="">
+						</li>
+						<li><img src="Content/Images/linux.jpg" width="200" height="160" alt="">
+						</li>
+						<li><img src="Content/Images/php.jpg" width="200" height="160" alt="">
+						</li>
+						<li><img src="Content/Images/Apache.jpg" width="200" height="160" alt="">
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+				<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+				<p class="jcarousel-pagination"></p>
+			</div>
 		</div>
 		</ul>
 		</div>

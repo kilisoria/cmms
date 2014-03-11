@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<?php require_once("Layout.php"); ?>
-	<title>CMMS Software</title>  
-</head>
-<body>
-	<div class="main-image" title="Welcome to CMMS-Software!">		
-	</div>
+	<head>
+		<?php
+		require_once ("Layout.php");
+		?>
+		<title>CMMS Software</title>
+	</head>
+	<body>
+		<div class="main-container">
 
-	<script>
-	
-	$(document).ready(function(){
+			<div class="col-md-8 main-title">
+				CMMS SOFTWARE
+			</div>
 
-		$(".main-image").click(function(){
-			window.location.href = "Home.php";
-		});	
-	})
+		</div>
 
-	</script>
-	
-</body> 
+		<script>
+			$(document).ready(function() {
+
+				$(".main-container").click(function() {
+					window.location.href = "Home.php";
+				});
+			})
+
+		</script>
+
+	</body>
 </html>

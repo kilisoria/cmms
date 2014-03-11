@@ -13,9 +13,9 @@
 		?>
 
 		<section class="container-fluid contact-main-container">
-			<header class="control-group">
-				<h1>Contact US!</h1>
-			</header>
+			<div class="col-md-6 col-md-offset-4 contact-tile">
+				Contact US!
+			</div>
 			<div class="contact-form-container">
 				<form action="Contact.php" method="post">
 					<div class="contact-item-container">

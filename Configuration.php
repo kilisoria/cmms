@@ -13,5 +13,4 @@ public function GetAdministratorName(){
 
 }
 
-
  ?>

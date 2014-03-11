@@ -1,9 +1,10 @@
 
 /* Less variables */
-@background-color-default: #EEF2F6;
+@background-color-default: #fff; /*#EEF2F6;*/
 @background-color-container: #69AB79;
 @services-color:#008000;
 @min-height: 550px;
+@main-font:"FuturaND-Bold";
 
 html {
 	position: relative;
@@ -41,7 +42,7 @@ header {
 .footer div:nth-child(3) span:nth-child(2)
 {
   margin-left:18px;
-  color:#EEF2F6;
+  color:#12A058;
 }
 
 .footer-separator-line {
@@ -53,7 +54,7 @@ header {
 
 /* Common */
 
-.common.letter-style{
+.common-font-style{
   
 }
 
@@ -61,22 +62,22 @@ header {
 
 /* Main */
 
-.main-image {
-	width: 100%;
-	height: 100%;
+.main-container {
+	width: 1920px;
+	height: 1080px;
 	cursor: pointer;
+	background: url("../Images/home.jpg");
 	
 }
 
-.main-image img:hover {
-	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-	-webkit-filter: grayscale(0%);
-}
 
-.main-image img {
-	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
-	filter: gray; /* IE6-9 */
-	-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+.main-title{
+  color: #FFFFFF;
+    font-family: "FuturaND-Bold";
+    font-size: 62px;
+    letter-spacing: 11px;
+    padding: 14% 0 0 4%;
+    text-transform: uppercase;
 }
 
 /* (End) Main */
@@ -163,7 +164,7 @@ header {
 
 .contact-main-container input[type="text"], input[type="email"] {
 	height: 36px;
-	width: 300ddpx;
+	width: 300px;
 	background-color: #f6f6f6;
 	border: solid 1px #c5c5c5;
 	margin-top: 2px;
@@ -203,14 +204,22 @@ header {
 	margin-top: 8px;
 }
 
+.contact-tile{
+ color: #008000;
+    font-family: @main-font !important;
+    font-size: 38px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
 /* (End) Contact  */
 
 /* Home */
 
 .feature{
 	color: green;
-    font-family: sans-serif;
-    font-size: 32px;
+    font-family: @main-font;
+    font-size: 48px;
     position: absolute;
     top: 20%;
     left:4%;
@@ -233,32 +242,40 @@ header {
 /* Services */
 
 .services-main-container{
-  float:left;
   background-color: @background-color-default;
-  min-height:@min-height;
-  width:100%;
+  padding-bottom:20px;
 }
 
 .services-top-container{
-    color: @services-color;
-    font-family: sans-serif;
-    font-size: 28px;
-    font-style: italic;
-    margin: 20px 0 0 170px;
-    text-align: left;
-    width: 80%;
-    
+;    
 }
 
-.services-sub-top-container{
+.services-content-1{
     color: @services-color;
-    font-family: arial;
-    font-size: 18px;
+    font-family: @main-font;
+    font-size: 26px;
+    font-style: italic;
+    margin-top: 50px;
+    text-align: left  
+}
+
+.services-content-2{
+    color: @services-color;
+    font-family: @main-font;
+    font-size: 22px;
     font-style: italic;
     font-weight:bold;
-    margin: 20px 0 0 170px;
+    margin-top: 20px;
     text-align: left;
-    width: 80%;  
+    letter-spacing:6px;    
+    line-height:20px;
+}
+
+.services-content-2 div:first-letter{
+  color:#fff;
+  background-color:green;
+  font-size:22px;
+  box-shadow:1px 1px 10px #888;
 }
 
 /* (End) Services */
@@ -267,20 +284,20 @@ header {
 
 .blog-main-container{
   float:left;
-  background-color: @background-color-default;
+  background-color: @background-color-default;  
   min-height:@min-height;
   width:100%;
 }
 
 .blog-top-container{
     color: @services-color;
-    font-family: sans-serif;
+    font-family: @main-font;
     font-size: 28px;
     font-style: italic;
     margin: 20px 0 0 170px;
     text-align: left;
     width: 80%;
-    
+    display:block;
 }
 
 /* (End) Blog */

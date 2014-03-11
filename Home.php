@@ -12,9 +12,9 @@
 
 	<body>
 
-<div class="feature" id="initialMessage" style="display: none">
-  { CMMS Software - Developing your solution! }
-</div>
+		<div class="feature" id="initialMessage" style="display: none">
+			{ #Developing your solution! }
+		</div>
 
 		<canvas id="world">
 			<p class="noCanvas">
@@ -22,26 +22,24 @@
 			</p>
 		</canvas>
 
-<script src="Scripts/home.wave.js"></script>
-	
+		<script src="Scripts/home.wave.js"></script>
+
 		<?php require("Footer.php")
 		?>
 	</body>
-	
+
 	<script>
-		
-		
-		$(window).load(function(){
-			
-			$("#initialMessage").css("display","block")
-			//$("#initialMessage").fadeIn('slow').hide(20000);				
-			
+		$(window).load(function() {
+
+			$("#initialMessage").css("display", "block")
+			//$("#initialMessage").fadeIn('slow').hide(20000);
+
 		});
-		
-		$("#world").click(function(){
-			$("#initialMessage").css("display","none");
+
+		$("#world").click(function() {
+			$("#initialMessage").css("display", "none");
 		})
-		
+
 	</script>
-	
+
 </html>

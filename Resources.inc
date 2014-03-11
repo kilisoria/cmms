@@ -19,7 +19,7 @@ class Resources {
 	}
 
 	public static function ContactName() {
-		echo "Contact Us";
+		echo "Contact us";
 	}
 
 	public static function CopyRight() {
