@@ -1,3 +1,13 @@
+<?php 
+
+session_start();
+
+$lang = $_REQUEST["lang"];
+
+$_SESSION["Language"] = (strlen($lang) == 0) ? "No Defined" : $lang;
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -23,6 +33,9 @@
 		</canvas>
 
 		<script src="Scripts/home.wave.js"></script>
+
+
+<?php echo($_SESSION["Language"]); ?>
 
 		<?php require("Footer.php")
 		?>

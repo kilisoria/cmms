@@ -66,10 +66,12 @@ header {
 	width: 1920px;
 	height: 1080px;
 	cursor: pointer;
-	background: url("../Images/home.jpg");
-	
+	background: url("../Images/home.jpg");	
 }
 
+.main-container div:nth-child(2) span:nth-child(2){
+  margin: -4px 0 0 12px;
+}
 
 .main-title{
   color: #FFFFFF;
@@ -79,6 +81,17 @@ header {
     padding: 14% 0 0 4%;
     text-transform: uppercase;
 }
+
+.main-language-name{
+  font-size: 18px;
+  position:absolute;
+}
+
+.main-language-name a{
+  color:#fff;  
+  z-index:1000;
+}
+
 
 /* (End) Main */
 
@@ -277,6 +290,28 @@ header {
   font-size:22px;
   box-shadow:1px 1px 10px #888;
 }
+
+.services-content-3{
+    color: @services-color;
+    font-family: @main-font;
+    font-size: 26px;
+    font-style: italic;
+    margin-top: 50px;
+    text-align: left;
+    cursor:pointer; 
+}
+
+.services-content-3 img:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
+.services-content-3 img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
 
 /* (End) Services */
 
