@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<?php require_once ("Layout.php"); ?>
+
+	<script src="Scripts/jquery.easing.1.3.js"></script>
+	<script  src="Scripts/jquery.animate-colors-min.js"></script>
+	<script src="Scripts/jquery.skitter.min.js"></script>
+	<link rel="stylesheet" href="Content/Styles/skitter.styles.css" />	
+
+	<title>CMMS Software</title>  
+</head>
+<?php include("Header.php")?>
+<body>
+<div class="container-fluid company-main-container">  
+<div class="container box_skitter box_skitter_large">
+<ul>
+<li>
+<a href="#cut"><img src="Content/Images/Company-5.jpg" class="cut" /></a>
+<div class="label_text"><p>TeamWork</p></div>
+</li>
+<li>
+<a href="#swapBlocks"><img src="Content/Images/Company-1.jpg" class="swapBlocks" /></a>
+<div class="label_text"><p>Responsibility</p></div>
+</li>
+<li>
+<a href="#swapBarsBack"><img src="Content/Images/Company-2.jpg" class="swapBarsBack" /></a>
+<div class="label_text"><p>Quality</p></div>
+</li>
+<li>
+<a href="#swapBarsBack"><img src="Content/Images/Company-7.jpg" class="swapBarsBack" /></a>
+<div class="label_text"><p>Effort</p></div>
+</li>
+<li>
+<a href="#swapBarsBack"><img src="Content/Images/Company-4.jpg" class="swapBarsBack" /></a>
+<div class="label_text"><p>Adaptive</p></div>
+</li>
+<li>
+<a href="#swapBarsBack"><img src="Content/Images/Company-6.jpg" class="swapBarsBack" /></a>
+<div class="label_text"><p>Knowledge</p></div>
+</li>
+<li>
+<a href="#swapBarsBack"><img src="Content/Images/Company-3.jpg" class="swapBarsBack" /></a>
+<div class="label_text"><p>Collaborative</p></div>
+</li>
+<li>
+<a href="#swapBarsBack"><img src="Content/Images/Company-8.jpg" class="swapBarsBack" /></a>
+<div class="label_text"><p>Trend</p></div>
+</li>
+</ul>
+</div>
+</div>
+
+<?php include("Footer.php")?>
+</body> 
+
+<script>
+
+$(document).ready(function() {
+
+	$(".nav-logo").click(function() {
+		window.location.href = "Home.html";
+	});
+
+	$('.navbar-header .navbar-brand:eq(0)').click(function() {
+		window.location.href = "Home.html";
+	});
+
+	$('.navbar-header .navbar-brand:eq(1)').click(function() {
+		window.location.href = "Services.html";
+	});
+
+	$('.navbar-header .navbar-brand:eq(2)').click(function() {
+		window.location.href = "Company.html";
+	});
+
+	$('.navbar-right a:eq(0)').click(function() {
+		window.location.href = "Blog.html";
+	});
+
+	$('.navbar-right a:eq(1)').click(function() {
+		window.location.href = "Contact.html";
+	});
+
+	$(".gobal-social-network-twitter").click(function() {
+		var win = window.open('https://twitter.com/cmmsok', '_newtab');
+		win.focus();
+	});
+
+	$(".gobal-social-network-facebook").click(function() {
+		var win = window.open('https://www.facebook.com/pages/CMMS-Software/518582168192061?ref=hl', '_newtab');
+		win.focus();
+	});
+
+	$(".gobal-social-network-email").click(function() {
+		window.location.href = "mailto:cmms@outlook.com";
+	});
+
+	$(".box_skitter_large").skitter();
+
+});
+
+</script>
+
+</html>

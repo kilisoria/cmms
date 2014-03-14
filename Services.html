@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<?php require_once ("Layout.php"); ?>
+	<?php require_once ("Resources.inc"); ?>
+	
+	<title>CMMS Software</title>
+</head>
+<?php include("Header.php")?>
+<body>
+<div class="container-fluid services-main-container">
+<div class="row">
+<div class="col-md-6 col-md-offset-3 services-content-1">
+<?php Resources::ServicesMainDescription(); ?>
+</div>
+</div>
+<div class="row">
+	<div class="col-md-8 col-md-offset-3 services-content-2">
+		<div>Architecture</div>&nbsp;<div>Software Development</div>&nbsp;<div>Consultancy</div>					
+	</div>
+</div>
+
+<div class="col-md-6 col-md-offset-3 services-content-3">
+	<img src="Content/Images/microsoft.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/VS-logo.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/Csharp.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/ASP-net-MVC.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/SQL-server.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/Azure.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/HTML5.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/css3.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/javascript.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/linux.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/php.jpg" width="120" height="120" alt="">
+	<img src="Content/Images/Apache.jpg" width="120" height="120" alt="">
+</div>		
+</div>
+</ul>
+</div>
+</div>
+<?php include("Footer.php")?>
+</body>
+
+<script>
+
+$(document).ready(function() {
+
+	$(".nav-logo").click(function() {
+		window.location.href = "Home.html";
+	});
+
+	$('.navbar-header .navbar-brand:eq(0)').click(function() {
+		window.location.href = "Home.html";
+	});
+
+	$('.navbar-header .navbar-brand:eq(1)').click(function() {
+		window.location.href = "Services.html";
+	});
+
+	$('.navbar-header .navbar-brand:eq(2)').click(function() {
+		window.location.href = "Company.html";
+	});
+
+	$('.navbar-right a:eq(0)').click(function() {
+		window.location.href = "Blog.html";
+	});
+
+	$('.navbar-right a:eq(1)').click(function() {
+		window.location.href = "Contact.html";
+	});
+
+	$(".gobal-social-network-twitter").click(function() {
+		var win = window.open('https://twitter.com/cmmsok', '_newtab');
+		win.focus();
+	});
+
+	$(".gobal-social-network-facebook").click(function() {
+		var win = window.open('https://www.facebook.com/pages/CMMS-Software/518582168192061?ref=hl', '_newtab');
+		win.focus();
+	});
+
+	$(".gobal-social-network-email").click(function() {
+		window.location.href = "mailto:cmms@outlook.com";
+	});
+})
+
+</script>
+
+</html>

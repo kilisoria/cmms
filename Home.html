@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<?php require_once ("Layout.php"); ?>
+
+	<title>CMMS Software</title>
+</head>
+<?php include("Header.php")?>
+<body>
+<div class="feature" id="initialMessage" style="display: none">{ #Developing your solution! }</div>
+<canvas id="world">
+<p class="noCanvas">
+You need a <a href="http://www.google.com/chrome">modern browser</a> to view this.
+</p>
+</canvas>
+
+<script src="Scripts/home.wave.js"></script>
+
+<?php include("Footer.php")?>
+
+</body>
+
+<script>
+
+$(window).load(function() {
+   $("#initialMessage").css("display", "block");
+});
+
+$("#world").click(function() {
+   $("#initialMessage").css("display", "none");
+})
+
+</script>
+
+</html>

@@ -1,0 +1,83 @@
+
+<!-- Header -->
+<nav class="navbar-inverse" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<ul class="nav navbar-nav">
+				<li>
+					<a class="nav-logo"> <img src="Content/Images/header-logo-1.jpg" 
+						title="CMMS Software"> <span class="nav-logo-description">CMMS</span> </a>
+					</li>
+					<li class="divider-vertical"></li>
+					<li>
+						<a class="navbar-brand" href="#">Home</a>
+					</li>
+					<li>
+						<a class="navbar-brand" href="#">Services</a>
+					</li>
+					<li>
+						<a class="navbar-brand" href="#">Company</a>
+					</li>
+				</ul>
+			</div>
+			<div class="container-fluid">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a  href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+					<li class="gobal-social-network-twitter"></li>
+					<li></li>				
+					<li class="gobal-social-network-facebook"></li>
+					<li class="gobal-social-network-email"></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- (End) Header -->		
+
+		<script>
+		$(document).ready(function() {
+
+			$(".nav-logo").click(function() {
+				window.location.href = "Home.php";
+			});
+
+			$('.navbar-header .navbar-brand:eq(0)').click(function() {
+				window.location.href = "Home.php";
+			});
+
+			$('.navbar-header .navbar-brand:eq(1)').click(function() {
+				window.location.href = "Services.php";
+			});
+
+			$('.navbar-header .navbar-brand:eq(2)').click(function() {
+				window.location.href = "Company.php";
+			});
+
+			$('.navbar-right a:eq(0)').click(function() {
+				window.location.href = "Blog.php";
+			});
+
+			$('.navbar-right a:eq(1)').click(function() {
+				window.location.href = "Contact.php";
+			});
+
+			$(".gobal-social-network-twitter").click(function() {
+				var win = window.open('https://twitter.com/cmmsok', '_newtab');
+				win.focus();
+			});
+
+			$(".gobal-social-network-facebook").click(function() {
+				var win = window.open('https://www.facebook.com/pages/CMMS-Software/518582168192061?ref=hl', '_newtab');
+				win.focus();
+			});
+
+			$(".gobal-social-network-email").click(function() {
+				window.location.href = "mailto:cmms@outlook.com";
+			});
+		});
+
+</script>
