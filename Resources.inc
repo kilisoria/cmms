@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 class Resources {
 
@@ -54,6 +54,9 @@ class Resources {
 		echo "Coming Soon! :)";
 	}
 	
+	public static function Nop(){
+            echo "NOOOOOOOOOOOOOO";
+        } 
 
 }
 ?>
